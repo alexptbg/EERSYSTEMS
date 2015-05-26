@@ -1,0 +1,1 @@
+<?php $p = rand(10,60); $r = '&value='.$p; echo $r; ?>

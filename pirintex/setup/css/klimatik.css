@@ -1,0 +1,220 @@
+.lamp {
+	text-align: right;
+	display: inline-block;
+	margin: 0 auto;
+	padding:3px;
+}
+.l {
+	text-align: right;
+	overflow: hidden;
+	line-height: 1px;
+}
+.lamp span {
+	display: block;
+	width: 12px;
+	height: 12px;
+	background-color: rgb(255,0,0);
+	box-shadow: inset 0px 1px 0px 0px rgba(250,250,250,0.5),
+				0px 0px 3px 2px rgba(255,0,0,0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+ 	clear: both;
+	float: right;
+ 	transition: background-color 350ms, box-shadow 700ms;
+	-o-transition: background-color 350ms, box-shadow 700ms;
+	-moz-transition: background-color 350ms, box-shadow 700ms;
+	-webkit-transition: background-color 350ms, box-shadow 700ms;
+}
+.lamp span.on {
+	box-shadow: inset 0px 1px 0px 0px rgba(250,250,250,0.5),
+				0px 0px 3px 2px rgba(60,255,64,0.5);
+	background-color: rgb(60,255,60);
+}
+.lamp span.err {
+	box-shadow: inset 0px 1px 0px 0px rgba(250,250,250,0.5),
+				0px 0px 3px 2px rgba(255,166,0,0.5);
+	background-color: rgb(255,166,0);
+}
+.lcd {
+	width: 28px;
+	height: 21px;
+	padding:5px;
+	position: relative;
+	margin:0 auto;
+	background-color:#A7AF9B;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	border:2px solid #232A34;
+	display: inline-block;
+}
+.cd {
+	color: #232A34;
+}
+#output {
+	display: none;
+}
+span.lcd {
+	color: #232A34;
+	font-weight: 700;
+}
+.led {
+	width: 97%;
+	padding:10px 0px 0px 10px;
+	position: relative;
+	margin:0px 0px 4px 0px;
+	background-color:#A7AF9B;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	border:2px solid #232A34;
+	display: inline-block;
+}
+.led .hr {
+    color:#232A34;
+    background-color:#232A34;
+    height:1px;
+	width:100%;
+}
+.led .mleft {
+	padding-top: 7px;
+	text-align: right;
+	border-right: 1px solid #232A34;
+	height:90px;
+}
+.led .mleft p:first-child,.led .mright p:first-child {
+    margin-top: 5px;
+} 
+.led .mleft p {
+	padding-right: 15px;
+}
+.led .mright p {
+	padding-left: 15px;
+}
+.led .mleft h2 {
+	font-size: 36px;
+	text-align: center;
+	font-weight: 400;
+	line-height: 34px;
+}
+.led .mleft span.sp {
+	font-size: 20px;
+	text-align: center;
+    overflow: hidden;
+	line-height: 22px;
+	float: left;
+	font-weight: 500;
+	padding-top: 3px;
+	padding-left: 43%;
+}
+.led .mright {
+	margin-left: 0;
+    text-align: left;
+	margin-right: 0;
+	padding-right: 0;
+}
+.led .mright h2 {
+	font-size: 36px;
+	text-align: center;
+	font-weight: 400;
+}
+.led .mleft p {
+	line-height:10px;
+	color: #232A34;
+	font-size:18px;
+}
+.led .mright p {
+	line-height:14px;
+	color: #232A34;
+	font-size:16px;
+}
+.led .mright p span i {
+	line-height:10px;
+	font-size: 18px;
+	margin: 0 auto;
+}
+.led .mright span.r {
+    margin: 0;
+	padding: 0;
+	padding-right: 15px;
+	text-align: right;
+	float: right;
+}
+.led .mright h3 {
+	font-size: 28px;
+	line-height: 10px;
+	text-align: center;
+}
+.led i.active {
+	color:#232A34;
+}
+.led i {
+	color:#848f74;
+}
+.led i.inactive {
+	color:#79846a;
+}
+.led i#auto {
+	text-transform: uppercase;
+}
+table.kl {
+	width: 100%;
+}
+table.kl td {
+	/*border: 1px solid #FF0000;*/
+}
+table.kl tr.mt {
+	border-top: 1px solid #232A34;
+}
+table.kl td.c {
+	text-align: center;
+	vertical-align: middle;
+}
+table.kl th.caption {
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px;
+	padding: 5px 10px 1px 10px;
+	text-shadow: -1px -1px 1px #ccc, 1px 1px 1px #000;
+}
+table.kl tfoot tr td {
+	text-transform: uppercase;
+	color: #000000;
+	text-align: center;
+	text-shadow: -1px -1px 1px #ccc, 1px 1px 1px #000;
+}
+table.std {
+	margin-bottom: 10px;
+}
+table.std th {
+	border-bottom: 1px solid #232A34;
+	border-left: 1px solid #232A34;
+}
+table.std th:last-child, table.std td:last-child  {
+	border-right: 1px solid #232A34; 
+}
+table.std td {
+	border-left: 1px solid #232A34;
+	text-align:center;
+	border-bottom: 1px solid #232A34; 
+}
+table.std td span.tar {
+	text-align: right;
+	padding-right: 10px;
+	float: right;
+	overflow: hidden;
+}
+table.std td span.tal {
+	text-align:left;
+	float: left;
+	padding-left: 10px;
+	overflow: hidden;
+}
+.controls {
+	margin:0 auto;
+	padding: 0;
+	position: relative;
+	display: block;
+}
