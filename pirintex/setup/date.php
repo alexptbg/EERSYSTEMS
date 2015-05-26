@@ -1,0 +1,1 @@
+<?php $timestamp = time(); $datum = date("j/n/Y",$timestamp); echo $datum; ?>

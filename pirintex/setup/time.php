@@ -1,0 +1,1 @@
+<?php $timestamp = time(); $datum = date("H:i:s",$timestamp); echo $datum; ?>

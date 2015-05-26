@@ -1,0 +1,162 @@
+@charset "utf-8";
+@import "icons.css";
+@import "bootstrap.css";
+@import "bootstrap-responsive.css";
+@import "font-awesome.css";
+@import "fullcalendar.css";
+@import "ui.css";
+@import "select2.css";
+@import "uniform.default.css";
+@import "validation.css";
+@import "mCustomScrollbar.css";
+@import "cleditor.css";
+@import "fancybox/jquery.fancybox.css";
+@import "../js/plugins/plupload/jquery.plupload.queue/css/jquery.plupload.queue.css";
+@import "elfinder.min.css";
+@import "elfinder.css";
+@import "multi-select.css";
+@import "stylesheet.css";
+html { height: 100%; }
+body { 
+    min-height: 100%; 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	line-height: 22px; 
+	position: relative; 
+	background: url("../img/backgrounds/body.jpg") left top repeat;
+}
+@media only screen and (max-width: 1350px) {
+    body .wrapper .menu{display: block;}
+}
+@media only screen and (max-width: 1024px) {
+    body .wrapper .menu{display: block;}
+    .header a.logo h2 { font-size: 16px; width: 160px;}
+}
+@media only screen and (max-width: 767px) {
+	body .wrapper .menu .admin {display: none;}
+    .header a.logo h2 { font-size: 16px; }
+	.head h1 { font-weight: 400; font-size: 12px; }
+	table.table.klima caption { font-size:12px; }
+	table.table.klima th { font-size:12px; }	
+	table.table.klima h2 { font-size:18px; }
+	table.table.klima h4 { font-size:16px; }
+	table.table.klima img { width:64px; height:64px; }	
+	/*.head ul { display: none; }*/
+	#hfph { display: none; }
+	.admin {
+		display: none;
+	}
+	.logox,.qrcode {
+		display: none;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    body .wrapper .menu {
+		display: none; 
+		position: absolute; 
+		/*left: 50%; */
+		right:1px;
+		margin-top: 0px; 
+		/*margin-left: -110px !important; */
+		top: 45px;
+		width: 60%;
+		z-index: 2000; 
+		height: auto; 
+		min-height: auto;
+	}
+	.navigation li, .navigation li > a {
+		width: 100%;
+	}
+    body .wrapper .menu .breadLine .arrow {display: block;}
+    body .wrapper .content{margin-left: 0px;}
+        .header .header_menu li.list_icon{display: block;}
+	.header a.logo h2 { font-size: 14px; width: 120px;}
+}
+@media only screen and (max-width: 479px) {
+    body .wrapper .menu {
+		display: none; 
+		position: absolute; 
+		left:1px;
+		margin-top: 0px; 
+		/*margin-left: -110px !important; */
+		top: 45px;
+		width: 90%;
+		z-index: 2000; 
+		height: auto; 
+		min-height: auto;
+	}
+	.navigation li, .navigation li > a {
+		width: 100%;
+	}
+	.header a.logo h2 { font-size: 12px; }
+	.breadLine ul {
+		display: none;
+	}
+	.breadLine span.time {
+		float: left;
+		text-align: left;
+		padding: 1px 0px 2px 20px;
+	}
+.popup{
+	position: absolute; 
+	top: 0px; 
+	z-index: 3; 
+	width: 90%; 
+	background-color: #FFFFFF; 
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.35); 
+	display: none;
+}
+	.footer span.hits {
+		display: none;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body .wrapper .menu {
+		display: none; 
+		position: absolute; 
+		/*left: 50%; */
+		right:1px;
+		margin-top: 0px; 
+		/*margin-left: -110px !important; */
+		top: 45px;
+		width: 50%;
+		z-index: 2000; 
+		height: auto; 
+		min-height: auto;
+	}
+	.logox {
+		display: none;
+	}
+	.navigation li, .navigation li > a {
+		width: 100%;
+	}
+    body .wrapper .menu .breadLine .arrow {display: block;}
+    body .wrapper .content{margin-left: 0px;}
+        .header .header_menu li.list_icon{display: block;} 
+}
+@media only screen and (max-width: 768px) {
+    .wBlock.auto{width: auto; float: left;}
+        .wBlock.auto .dSpace{padding: 3px;}
+    .wBlock .dSpace{width: 100%; padding: 3px 0px;}
+    .wBlock .rSpace{float: left; width: 100%;}
+}
+
+@media only screen and (min-width: 769px) {
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 980px) {
+/* here */    
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    body .wrapper .menu .breadLine .arrow {display: block;}
+    body .wrapper .content{margin-left: 0px;}
+        .header .header_menu li.list_icon{display: block;}        
+}
+
+@media only screen and (max-width: 319px) {
+    body .wrapper .menu .breadLine .arrow {display: block;}
+    body .wrapper .content{margin-left: 0px;}
+        .header .header_menu li.list_icon{display: block;}    
+}

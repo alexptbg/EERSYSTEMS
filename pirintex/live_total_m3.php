@@ -1,0 +1,30 @@
+<?php
+define('start', TRUE);
+include('includes/db.php');
+include('includes/functions.php');
+include('includes/init.php');
+DataBase::getInstance()->connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
+include('includes/config.php');
+$line = $_GET['line'];
+$inv = $_GET['inv'];
+$id = $_GET['id'];
+$v_id = $_GET['v_id'];
+get_line_options($line);
+$datafile = "data/{$line_options['data_file']}";
+include("$datafile");
+$dev = ${'dev' . $id};
+$d = explode(" ", $dev);
+header("Content-type: text/json");
+$x = time() * 1000;
+//$m3 = ($d[25]*65536+$d[24])-($d[27]*65536+$d[26]);
+$m3 = $d[25]*65536+$d[24];
+//$tm3 = count_m3($line,$inv,$id,$v_id);
+//$t = $m3+$tm3;
+$v_m3 = $m3/1000;
+$x = time() * 1000;
+$return_data = array($x,$v_m3);
+header('Content-type: application/json');
+$json = json_encode($return_data);
+$json = preg_replace('/"(-?\d+\.?\d*)"/', '$1', $json);
+echo $json;
+?>

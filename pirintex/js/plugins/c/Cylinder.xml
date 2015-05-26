@@ -1,0 +1,14 @@
+<chart 
+    manageResize="1"  
+	upperLimit='100' 
+	lowerLimit='0' 
+	tickMarkGap='5'
+	showBorder='0'
+    bgColor='F9F9F9'
+	bgAlpha='0'
+	cylFillColor='FF0000'
+	numberSuffix='%' 
+	dataStreamURL='http://eesystems.net/pirintex/i__.php?line=Extra&id=0' 
+	refreshInterval='1'>
+<value>0</value>
+</chart>
